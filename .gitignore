@@ -1,45 +1,119 @@
 
+# ==========================================
+# SENTINEL - Combined Git Ignore
+# ==========================================
+
 # Node.js dependencies
 node_modules/
 **/node_modules/
+jspm_packages/
+bower_components/
+web_modules/
+.pnpm-store/
 
-# Python environments
+# Python environments and cache
 .venv/
 venv/
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.mypy_cache/
 
-# Secrets
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
 
-# Build files
+# Build outputs
 dist/
 build/
 coverage/
+build/Release/
+.next/
+out/
+.nuxt/
+.output/
+.vuepress/dist/
+.svelte-kit/
+**/.vitepress/dist/
+**/.vitepress/cache/
+.astro/
+.turbo/
 
-# Logs
+# Logs and diagnostic reports
+logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# Local backups
-SENTINEL_BACKUP/
-sentinel-backups/
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Test coverage and instrumentation
+.nyc_output/
+*.lcov
+lib-cov/
+.grunt/
+
+# Package manager and build caches
+.npm/
+.cache/
+.parcel-cache/
+.fusebox/
+.firebase/
+.dynamodb/
+.serverless/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn-integrity
+.lock-wscript
+*.tgz
+
+# TypeScript and lint caches
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+
+# Vite
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Other framework caches
+.docusaurus/
+.temp/
+.tern-port/
 
 # IDE
 .vscode/
 .idea/
+.vscode-test/
 
 # Operating system
 .DS_Store
 Thumbs.db
 desktop.ini
 
+# Local project backups
+SENTINEL_BACKUP/
+sentinel-backups/
+*.before-layout-fix
+
 # Temporary files
 tmp/
 temp/
-.pytest_cache/
-.mypy_cache/
-# Local CSS backups
-*.before-layout-fix
+
+# Local tool history
+.node_repl_history
+*.seed
