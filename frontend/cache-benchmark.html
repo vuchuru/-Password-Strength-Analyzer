@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SENTINEL | Cache Performance Lab</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 35px;
+      background: #080e19;
+      color: #e5edf5;
+      font-family: Arial, sans-serif;
+    }
+    main { max-width: 900px; margin: auto; }
+    h1 { color: #28c7f7; }
+    p { color: #aab8c9; line-height: 1.6; }
+    button {
+      padding: 13px 22px;
+      background: #087b9d;
+      color: white;
+      border: 0;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:disabled { opacity: .5; cursor: wait; }
+    pre {
+      margin-top: 24px;
+      padding: 20px;
+      background: #131f30;
+      border: 1px solid #293c53;
+      border-radius: 8px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      line-height: 1.6;
+    }
+    .note { font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>SENTINEL / PERFORMANCE LAB</h1>
+    <p>
+      Controlled browser comparison of the original password engine
+      against the word-sequence cache optimization.
+    </p>
+    <p class="note">
+      Synthetic test inputs only. Password values are never displayed
+      or included in the benchmark report.
+    </p>
+    <button id="runBenchmark">RUN BENCHMARK</button>
+    <pre id="output">Ready. Select RUN BENCHMARK to begin.</pre>
+  </main>
+  <script type="module" src="/src/cache-benchmark.ts"></script>
+</body>
+</html>

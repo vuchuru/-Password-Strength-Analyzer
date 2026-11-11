@@ -1,0 +1,45 @@
+
+# Node.js dependencies
+node_modules/
+**/node_modules/
+
+# Python environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Build files
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local backups
+SENTINEL_BACKUP/
+sentinel-backups/
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+tmp/
+temp/
+.pytest_cache/
+.mypy_cache/
+# Local CSS backups
+*.before-layout-fix
